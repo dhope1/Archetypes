@@ -1,0 +1,142 @@
+[
+    {
+      "id": 1,
+      "question": "How do you tackle a group project at work or school?",
+      "options": [
+        { "text": "I work independently, delivering my part flawlessly.", "points": { "Sigma": 3, "Omega": 1 } },
+        { "text": "I bring creative ideas to make the project unique.", "points": { "Gamma": 3, "Zeta": 1 } },
+        { "text": "I take charge and guide the team.", "points": { "Alpha": 3, "Zeta": 1 } },
+        { "text": "I ensure everyone’s heard and keep the team united.", "points": { "Beta": 3, "Delta": 1 } }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What drives you most in life?",
+      "options": [
+        { "text": "Pursuing my own path, free from norms.", "points": { "Sigma": 3, "Zeta": 2 } },
+        { "text": "Helping others and building connections.", "points": { "Beta": 3, "Delta": 1 } },
+        { "text": "Achieving success and earning respect.", "points": { "Alpha": 3, "Gamma": 1 } },
+        { "text": "Exploring new ideas and adventures.", "points": { "Gamma": 3, "Omega": 1 } },
+        { "text": "Personal growth through self-reflection.", "points": { "Omega": 3, "Zeta": 1 } }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "You’re at a party. What’s your vibe?",
+      "options": [
+        { "text": "Charming the crowd, owning the room.", "points": { "Alpha": 3, "Gamma": 1 } },
+        { "text": "Having a deep one-on-one conversation.", "points": { "Sigma": 3, "Omega": 1 } },
+        { "text": "Making sure friends are having fun.", "points": { "Beta": 3, "Delta": 1 } },
+        { "text": "Sharing bold stories or sparking debates.", "points": { "Gamma": 3, "Zeta": 1 } }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "How do you handle a disagreement with a friend?",
+      "options": [
+        { "text": "I use humor or creativity to ease tension.", "points": { "Gamma": 3, "Zeta": 1 } },
+        { "text": "I confront it directly, stating my view.", "points": { "Alpha": 3, "Zeta": 1 } },
+        { "text": "I listen and seek a fair compromise.", "points": { "Beta": 3, "Delta": 2 } },
+        { "text": "I step back and handle it my own way.", "points": { "Sigma": 3, "Omega": 1 } },
+        { "text": "I reflect on it before responding thoughtfully.", "points": { "Omega": 3, "Zeta": 1 } }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "How do you make tough decisions?",
+      "options": [
+        { "text": "I analyze deeply and trust my logic.", "points": { "Omega": 3, "Sigma": 1 } },
+        { "text": "I act confidently on my instincts.", "points": { "Alpha": 3, "Zeta": 1 } },
+        { "text": "I weigh others’ input and collaborate.", "points": { "Beta": 3, "Delta": 1 } },
+        { "text": "I consider unconventional solutions.", "points": { "Gamma": 3, "Zeta": 2 } }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What hobbies do you enjoy most?",
+      "options": [
+        { "text": "Solo pursuits like reading or coding.", "points": { "Omega": 3, "Sigma": 2 } },
+        { "text": "Creative or adventurous activities like art or travel.", "points": { "Gamma": 3, "Zeta": 1 } },
+        { "text": "Competitive sports or leadership roles.", "points": { "Alpha": 3, "Delta": 1 } },
+        { "text": "Team-based or community activities.", "points": { "Beta": 3, "Delta": 2 } },
+        { "text": "Challenging norms through unique interests.", "points": { "Zeta": 3, "Sigma": 1 } }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "How do you view rules and traditions?",
+      "options": [
+        { "text": "I make my own rules, ignoring norms.", "points": { "Sigma": 3, "Zeta": 2 } },
+        { "text": "I follow them to maintain harmony.", "points": { "Beta": 3, "Delta": 2 } },
+        { "text": "I respect them but adapt as needed.", "points": { "Alpha": 3, "Delta": 1 } },
+        { "text": "I challenge them with fresh ideas.", "points": { "Gamma": 3, "Zeta": 1 } }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What’s your role in a crisis?",
+      "options": [
+        { "text": "I focus on solving it my way.", "points": { "Sigma": 3, "Omega": 1 } },
+        { "text": "I propose creative solutions.", "points": { "Gamma": 3, "Zeta": 1 } },
+        { "text": "I direct others and take charge.", "points": { "Alpha": 3, "Zeta": 1 } },
+        { "text": "I stay calm and support the team.", "points": { "Beta": 3, "Delta": 2 } },
+        { "text": "I analyze the problem thoroughly.", "points": { "Omega": 3, "Zeta": 1 } }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "How do you meet new people?",
+      "options": [
+        { "text": "I’m reserved but connect deeply.", "points": { "Sigma": 3, "Omega": 2 } },
+        { "text": "I’m confident and make an impact.", "points": { "Alpha": 3, "Gamma": 1 } },
+        { "text": "I’m friendly and make others comfortable.", "points": { "Beta": 3, "Delta": 1 } },
+        { "text": "I share unique ideas or perspectives.", "points": { "Gamma": 3, "Zeta": 1 } }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "What’s your greatest strength?",
+      "options": [
+        { "text": "My empathy and dependability.", "points": { "Beta": 3, "Delta": 2 } },
+        { "text": "My creativity and adaptability.", "points": { "Gamma": 3, "Zeta": 2 } },
+        { "text": "My independence and focus.", "points": { "Sigma": 3, "Omega": 1 } },
+        { "text": "My confidence and leadership.", "points": { "Alpha": 3, "Zeta": 1 } },
+        { "text": "My intellect and self-awareness.", "points": { "Omega": 3, "Zeta": 1 } }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "How do you recharge after a tough day?",
+      "options": [
+        { "text": "Pursuing personal projects or solitude.", "points": { "Sigma": 3, "Omega": 2 } },
+        { "text": "Exploring new hobbies or ideas.", "points": { "Gamma": 3, "Zeta": 1 } },
+        { "text": "Socializing or leading activities.", "points": { "Alpha": 3, "Gamma": 1 } },
+        { "text": "Spending time with friends or family.", "points": { "Beta": 3, "Delta": 2 } }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "What’s your ideal career path?",
+      "options": [
+        { "text": "Collaborating in a supportive role.", "points": { "Beta": 3, "Delta": 2 } },
+        { "text": "Pursuing independent or innovative work.", "points": { "Sigma": 3, "Omega": 1 } },
+        { "text": "Leading a team or organization.", "points": { "Alpha": 3, "Zeta": 1 } },
+        { "text": "Engaging in creative or exploratory fields.", "points": { "Gamma": 3, "Zeta": 2 } },
+        { "text": "Focusing on intellectual or niche expertise.", "points": { "Omega": 3, "Sigma": 1 } },
+        { "text": "Challenging norms and creating change.", "points": { "Zeta": 3, "Gamma": 1 } }
+      ]
+    },
+    {
+      "id": 13,
+      "question": "(Optional) Which of these figures do you relate to most? Choose all that resonate with your personality.",
+      "options": [
+        { "text": "Sheldon Cooper", /* "Sheldon Cooper (The Big Bang Theory): An intellectual who embraces his unique quirks." */ "points": { "Omega": 5, "Sigma": 1 } },
+        { "text": "Harvey Specter", /* "Harvey Specter (Suits): A confident, sharp-witted lawyer who dominates any room." */ "points": { "Alpha": 5, "Zeta": 1 } },
+        { "text": "Sam Wilson", /* "Sam Wilson (The Falcon and the Winter Soldier): A loyal, grounded hero who supports his community and steps up for duty." */ "points": { "Delta": 5, "Beta": 1 } },
+        { "text": "Elon Musk", /* "Elon Musk: An innovative trailblazer who redefines what’s possible." */ "points": { "Zeta": 5, "Sigma": 1 } },
+        { "text": "Kanye West", /* "Kanye West: A bold, creative visionary who pushes artistic boundaries." */ "points": { "Gamma": 5, "Alpha": 1 } },
+        { "text": "John Wick", /* "John Wick: A legendary hitman who carves his own path with unmatched skill and resolve." */ "points": { "Sigma": 5, "Zeta": 1 } },
+        { "text": "Samwise Gamgee", /* "Samwise Gamgee (Lord of the Rings): A loyal friend who supports others selflessly." */ "points": { "Beta": 5, "Delta": 1 } }
+      ]
+    }
+  ]
