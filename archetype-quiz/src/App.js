@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import './index.css';
 
 function App() {
   return (
@@ -15,6 +17,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
+          <div className="bg-gray-900 text-white p-4">
+      <h1 className="text-3xl font-bold text-blue-600">Testing Tailwind</h1>
+    </div>
           Learn React
         </a>
       </header>
@@ -23,3 +28,5 @@ function App() {
 }
 
 export default App;
+
+
