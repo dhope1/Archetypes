@@ -130,13 +130,13 @@
       "id": 13,
       "question": "(Optional) Which of these figures do you relate to most? Choose all that resonate with your personality.",
       "options": [
-        { "text": "Sheldon Cooper", /* "Sheldon Cooper (The Big Bang Theory): An intellectual who embraces his unique quirks." */ "points": { "Omega": 5, "Sigma": 1 } },
-        { "text": "Harvey Specter", /* "Harvey Specter (Suits): A confident, sharp-witted lawyer who dominates any room." */ "points": { "Alpha": 5, "Zeta": 1 } },
-        { "text": "Sam Wilson", /* "Sam Wilson (The Falcon and the Winter Soldier): A loyal, grounded hero who supports his community and steps up for duty." */ "points": { "Delta": 5, "Beta": 1 } },
-        { "text": "Elon Musk", /* "Elon Musk: An innovative trailblazer who redefines what’s possible." */ "points": { "Zeta": 5, "Sigma": 1 } },
-        { "text": "Kanye West", /* "Kanye West: A bold, creative visionary who pushes artistic boundaries." */ "points": { "Gamma": 5, "Alpha": 1 } },
-        { "text": "John Wick", /* "John Wick: A legendary hitman who carves his own path with unmatched skill and resolve." */ "points": { "Sigma": 5, "Zeta": 1 } },
-        { "text": "Samwise Gamgee", /* "Samwise Gamgee (Lord of the Rings): A loyal friend who supports others selflessly." */ "points": { "Beta": 5, "Delta": 1 } }
+        { "text": "Sheldon Cooper", "points": { "Omega": 5, "Sigma": 1 } },
+        { "text": "Harvey Specter", "points": { "Alpha": 5, "Zeta": 1 } },
+        { "text": "Sam Wilson",  "points": { "Delta": 5, "Beta": 1 } },
+        { "text": "Elon Musk", "points": { "Zeta": 5, "Sigma": 1 } },
+        { "text": "Kanye West","points": { "Gamma": 5, "Alpha": 1 } },
+        { "text": "John Wick","points": { "Sigma": 5, "Zeta": 1 } },
+        { "text": "Samwise Gamgee", "points": { "Beta": 5, "Delta": 1 } }
       ]
     }
   ]

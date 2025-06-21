@@ -1,4 +1,4 @@
-```js
+
 import React from 'react';
 import Quiz from './components/Quiz';
 import './index.css';
@@ -8,4 +8,3 @@ function App() {
 }
 
 export default App;
-```

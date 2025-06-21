@@ -1,4 +1,4 @@
-```js
+
 import React, { useState } from 'react';
 import Question from './Question';
 import Results from './Results';
@@ -94,4 +94,3 @@ function Quiz() {
 }
 
 export default Quiz;
-```

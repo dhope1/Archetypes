@@ -1,4 +1,4 @@
-```js
+
 import React from 'react';
 
 function Question({ question, onAnswer, selectedOptions }) {
@@ -21,4 +21,3 @@ function Question({ question, onAnswer, selectedOptions }) {
 }
 
 export default Question;
-```

@@ -1,4 +1,4 @@
-```js
+
 import React from 'react';
 
 function Results({ scores }) {
@@ -23,4 +23,3 @@ function Results({ scores }) {
 }
 
 export default Results;
-```
