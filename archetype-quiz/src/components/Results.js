@@ -11,7 +11,7 @@ function Results({ scores }) {
     .sort((a, b) => b.percentage - a.percentage);
 
   return (
-    <div className="card">
+    <div className="card question-card">
       <h2 className="text-2xl font-bold mb-4">Your Archetype Results</h2>
       {percentages.map(({ archetype, percentage }) => (
         <div key={archetype} className="mb-2">
