@@ -60,11 +60,10 @@ function Quiz() {
 
   return (
     <div className="container">
-      <h1 className="text-3xl font-bold mb-6">Male Personality Archetype Quiz</h1>
       {showResults ? (
         <Results scores={scores} />
       ) : (
-        <div>
+        <div className="question-transition" key={currentQuestion}>
           <Question
             question={questions[currentQuestion]}
             onAnswer={(index) => handleAnswer(currentQuestion + 1, index)}
@@ -79,10 +78,7 @@ function Quiz() {
               {currentQuestion < questions.length - 1 ? 'Next' : 'Finish'}
             </button>
             {questions[currentQuestion].id === 13 && (
-              <button
-                onClick={handleSkip}
-                className="button"
-              >
+              <button onClick={handleSkip} className="button">
                 Skip
               </button>
             )}
