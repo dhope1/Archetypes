@@ -1,6 +1,6 @@
-@tailwind base;
+/*@tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 /*body {
   margin: 0;
@@ -16,6 +16,7 @@ code {
     monospace;
 }*/
 
+
 body {
   background-color: #1f2937;
   color: white;
@@ -24,18 +25,36 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
+
 .container {
   max-width: 800px;
   padding: 1rem;
   text-align: center;
 }
+
 .card {
   background-color: #374151;
   padding: 1.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.question-card {
+  background: linear-gradient(135deg, #374151, #4b5563);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.landing-page {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  padding: 3rem;
+  animation: fadeIn 1s ease-in;
+}
+
 .button {
   background-color: #2563eb;
   color: white;
@@ -43,11 +62,94 @@ body {
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
+
 .button:hover {
   background-color: #1d4ed8;
+  transform: scale(1.05);
 }
+
 .button:disabled {
   background-color: #6b7280;
   cursor: not-allowed;
+  transform: none;
+}
+
+.start-button {
+  background-color: #10b981;
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+}
+
+.start-button:hover {
+  background-color: #059669;
+  transform: scale(1.05);
+}
+
+.question-transition {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.custom-checkbox {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #2563eb;
+  border-radius: 0.25rem;
+  background-color: #374151;
+  cursor: pointer;
+  margin-right: 0.75rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.custom-checkbox:checked {
+  background-color: #2563eb;
+  border-color: #1d4ed8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z'/%3E%3C/svg%3E");
+  background-size: 1rem;
+  background-position: center;
+}
+
+.custom-checkbox:hover {
+  border-color: #3b82f6;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease;
+}
+
+.option-label:hover {
+  background-color: #4b5563;
+}
+
+.option-text {
+  font-size: 1.1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
