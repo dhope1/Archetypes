@@ -21,7 +21,7 @@ function Results({ scores }) {
       ))}
       <p className="mt-6">
         Want to dive deeper?{' '}
-        <a href="[YOUR_ARTICLE_LINK_HERE]" className="text-blue-400 hover:underline">
+        <a href="https://decoding-male-personalit-2i0ewnn.gamma.site/" className="text-blue-400 hover:underline">
           Learn more about archetypes
         </a>
       </p>
