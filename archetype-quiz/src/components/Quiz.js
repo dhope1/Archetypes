@@ -4,7 +4,7 @@ import Question from './Question';
 import Results from './Results';
 import questions from '../data/questions.json';
 
-function Quiz() {
+function Quiz({ username }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState({});
   const [scores, setScores] = useState({
@@ -46,6 +46,14 @@ function Quiz() {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
+      // Save to local storage
+      const quizData = {
+        username,
+        answers,
+        scores: newScores,
+        timestamp: new Date().toISOString(),
+      };
+      localStorage.setItem('quizData', JSON.stringify(quizData));
       setShowResults(true);
     }
   };
@@ -54,9 +62,19 @@ function Quiz() {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
+      // Save to local storage
+      const quizData = {
+        username,
+        answers,
+        scores,
+        timestamp: new Date().toISOString(),
+      };
+      localStorage.setItem('quizData', JSON.stringify(quizData));
       setShowResults(true);
     }
   };
+
+  const progress = ((currentQuestion + 1) / questions.length) * 100;
 
   return (
     <div className="container">
@@ -64,12 +82,15 @@ function Quiz() {
         <Results scores={scores} />
       ) : (
         <div className="question-transition" key={currentQuestion}>
+          <div className="progress-bar">
+            <div className="progress" style={{ width: `${progress}%` }}></div>
+          </div>
           <Question
             question={questions[currentQuestion]}
             onAnswer={(index) => handleAnswer(currentQuestion + 1, index)}
             selectedOptions={answers[currentQuestion + 1] || []}
           />
-          <div className="mt-4 flex justify-between">
+          <div className="button-container">
             <button
               onClick={handleNext}
               className="button"

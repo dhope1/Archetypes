@@ -50,13 +50,13 @@ body {
 }
 
 .landing-page {
-  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  background: linear-gradient(135deg, #1e3a8a, #a8b4c8);
   padding: 3rem;
   animation: fadeIn 1s ease-in;
 }
 
 .button {
-  background-color: #2563eb;
+  background-color: #152649;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
