@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 function Register({ onRegister }) {
@@ -21,10 +20,10 @@ function Register({ onRegister }) {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           placeholder="Your username"
-          className="input mb-4"
+          className="input mb-6"
           required
         />
-        <button type="submit" className="button start-button">
+        <button type="submit" className="button register-button">
           Register
         </button>
       </form>
