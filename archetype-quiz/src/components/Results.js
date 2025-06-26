@@ -13,7 +13,7 @@ function Results({ scores, onRetake }) {
   const handleShare = () => {
     const topArchetype = percentages[0].archetype;
     const topPercentage = percentages[0].percentage;
-    const shareText = `I'm ${topPercentage}% ${topArchetype}! Take the Male Personality Archetype Quiz to find yours: https://archetypes1.netlify.app/ `;
+    const shareText = `I'm ${topPercentage}% ${topArchetype}! Take the Personality Archetype Quiz to find yours: https://archetypes1.netlify.app/ `;
     navigator.clipboard.writeText(shareText).then(() => {
       alert('Results copied to clipboard! Paste it on X or share with friends.');
     });
