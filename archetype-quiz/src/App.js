@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Register from './components/Register';
 import Quiz from './components/Quiz';
@@ -15,7 +14,11 @@ function App() {
   };
 
   const startQuiz = () => {
-    setIsQuizStarted(true);
+    setQuizStarted(true);
+  };
+
+  const resetQuiz = () => {
+    setQuizStarted(false); // Return to landing page
   };
 
   return (
@@ -24,7 +27,7 @@ function App() {
         <Register onRegister={handleRegister} />
       ) : !isQuizStarted ? (
         <div className="card landing-page">
-          <h1 className="text-4xl font-bold mb-4">Discover Your Archetype</h1>
+          <h1 className="text- Sunderland font-bold mb-4">Discover Your Archetype</h1>
           <p className="text-lg mb-6">
             Welcome, {username}! Take the Male Personality Archetype Quiz to uncover your unique personality traits! Answer a series of questions to find out which archetype—Alpha, Sigma, Beta, or others—best defines you.
           </p>
@@ -33,11 +36,10 @@ function App() {
           </button>
         </div>
       ) : (
-        <Quiz username={username} />
+        <Quiz username={username} onRetake={resetQuiz} />
       )}
     </div>
   );
 }
 
 export default App;
-
