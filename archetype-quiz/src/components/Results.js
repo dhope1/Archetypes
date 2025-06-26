@@ -1,7 +1,7 @@
-
+<xaiArtifact>
 import React from 'react';
 
-function Results({ scores }) {
+function Results({ scores, onRetake }) {
   const totalPoints = Object.values(scores).reduce((sum, val) => sum + val, 0);
   const percentages = Object.entries(scores)
     .map(([archetype, points]) => ({
@@ -10,6 +10,15 @@ function Results({ scores }) {
     }))
     .sort((a, b) => b.percentage - a.percentage)
     .slice(0, 3); // Top 3 only
+
+  const handleShare = () => {
+    const topArchetype = percentages[0].archetype;
+    const topPercentage = percentages[0].percentage;
+    const shareText = `I'm ${topPercentage}% ${topArchetype}! Take the Male Personality Archetype Quiz to find yours: [YOUR_QUIZ_URL]`;
+    navigator.clipboard.writeText(shareText).then(() => {
+      alert('Results copied to clipboard! Paste it on X or share with friends.');
+    });
+  };
 
   return (
     <div className="card question-card">
@@ -21,12 +30,21 @@ function Results({ scores }) {
       ))}
       <p className="mt-6">
         Want to dive deeper?{' '}
-        <a href="https://decoding-male-personalit-2i0ewnn.gamma.site/" className="text-blue-400 hover:underline">
+        <a href="[YOUR_ARTICLE_LINK_HERE]" className="text-blue-400 hover:underline">
           Learn more about archetypes
         </a>
       </p>
+      <div className="button-container mt-6">
+        <button onClick={handleShare} className="button share-button">
+          Share Results
+        </button>
+        <button onClick={onRetake} className="button retake-button">
+          Retake Quiz
+        </button>
+      </div>
     </div>
   );
 }
 
 export default Results;
+</xaiArtifact>

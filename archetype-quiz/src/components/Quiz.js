@@ -1,10 +1,9 @@
-
 import React, { useState } from 'react';
 import Question from './Question';
 import Results from './Results';
 import questions from '../data/questions.json';
 
-function Quiz({ username }) {
+function Quiz({ username, onRetake }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState({});
   const [scores, setScores] = useState({
@@ -46,13 +45,13 @@ function Quiz({ username }) {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      // Save to local storage
       const quizData = {
         username,
         answers,
         scores: newScores,
         timestamp: new Date().toISOString(),
       };
+      console.log('Saving to localStorage:', quizData); // Debug
       localStorage.setItem('quizData', JSON.stringify(quizData));
       setShowResults(true);
     }
@@ -62,13 +61,13 @@ function Quiz({ username }) {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      // Save to local storage
       const quizData = {
         username,
         answers,
         scores,
         timestamp: new Date().toISOString(),
       };
+      console.log('Saving to localStorage:', quizData); // Debug
       localStorage.setItem('quizData', JSON.stringify(quizData));
       setShowResults(true);
     }
@@ -79,7 +78,7 @@ function Quiz({ username }) {
   return (
     <div className="container">
       {showResults ? (
-        <Results scores={scores} />
+        <Results scores={scores} onRetake={onRetake} />
       ) : (
         <div className="question-transition" key={currentQuestion}>
           <div className="progress-bar">
