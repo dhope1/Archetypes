@@ -17,7 +17,6 @@ code {
 }*/
 
 
-
 body {
   background-color: #1f2937;
   color: white;
@@ -86,6 +85,36 @@ body {
 
 .start-button:hover {
   background-color: #059669;
+  transform: scale(1.05);
+}
+
+.register-button {
+  background-color: #10b981;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+}
+
+.register-button:hover {
+  background-color: #059669;
+  transform: scale(1.05);
+}
+
+.share-button {
+  background-color: #d97706; /* Amber for a gaming vibe */
+  margin-right: 1rem;
+}
+
+.share-button:hover {
+  background-color: #b45309;
+  transform: scale(1.05);
+}
+
+.retake-button {
+  background-color: #dc2626; /* Red for a sporty feel */
+}
+
+.retake-button:hover {
+  background-color: #b91c1c;
   transform: scale(1.05);
 }
 
