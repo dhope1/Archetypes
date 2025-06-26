@@ -14,11 +14,11 @@ function App() {
   };
 
   const startQuiz = () => {
-    setQuizStarted(true);
+    setIsQuizStarted(true);
   };
 
   const resetQuiz = () => {
-    setQuizStarted(false); // Return to landing page
+    setIsQuizStarted(false); // Return to landing page
   };
 
   return (
